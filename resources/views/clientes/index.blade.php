@@ -4,7 +4,7 @@
   <p>Nome do cliente:<a href="{{route('edit', ['id' => $cliente->id])}}">{{$cliente->nome}}</a> </p>
   <p>debito: {{$cliente->debito}}</p>
   <p>descricao: {{$cliente->descricao}}</p>
-  /produtos/{{$cliente->id}}"></a>
+  
   <form action="{{route('delete', ['id' => $cliente->id])}}" method="POST">
                   @csrf
                   @method('DELETE')

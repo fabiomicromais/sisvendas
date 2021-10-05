@@ -19,4 +19,8 @@ class Cliente extends Model
         'debito',
         'descricao'
     ];
+
+    function endereco(){
+        return $this->hasMany(Endereco::class, 'cliente_id', 'id');
+    }
 }
